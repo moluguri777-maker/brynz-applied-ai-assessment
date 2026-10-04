@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.3.0",
+  "capture": {
+    "capture_id": "synthetic_lidar_fixture",
+    "tier": "lidar",
+    "source": "synthetic_lidar_fixture.zip",
+    "metric_status": "partial",
+    "frame_count": 4
+  },
+  "device": {
+    "model": "unknown",
+    "platform": "iPhone-compatible capture schema",
+    "rgb": true,
+    "depth": true,
+    "lidar": true,
+    "poses": true,
+    "intrinsics": true
+  },
+  "rooms": [
+    {
+      "room_id": "room-001",
+      "polygon": [
+        [
+          -1.492546488578579,
+          4.456619935035706
+        ],
+        [
+          1.7061652969299668,
+          4.456619935035706
+        ],
+        [
+          1.7061652969299668,
+          4.540470058917999
+        ],
+        [
+          -1.492546488578579,
+          4.540470058917999
+        ],
+        [
+          -1.492546488578579,
+          4.456619935035706
+        ]
+      ],
+      "floor_area_m2": 0.26821237947864457,
+      "ceiling_height_m": null,
+      "walls": [],
+      "openings": [],
+      "damage_regions": [],
+      "adjacent_rooms": [],
+      "measurements": [
+        {
+          "name": "floor_area",
+          "value": 0.26821237947864457,
+          "unit": "m2",
+          "confidence_interval": null,
+          "not_calibrated": true,
+          "method": "2D point-cloud bounding footprint",
+          "validation_status": "NOT_CALIBRATED"
+        },
+        {
+          "name": "ceiling_height",
+          "value": null,
+          "unit": "m",
+          "confidence_interval": null,
+          "not_calibrated": true,
+          "method": "robust percentile plane estimate",
+          "validation_status": "GROUND_TRUTH_REQUIRED"
+        }
+      ]
+    }
+  ],
+  "walls": [],
+  "openings": [],
+  "measurements": [
+    {
+      "name": "floor_area",
+      "value": 0.26821237947864457,
+      "unit": "m2",
+      "confidence_interval": null,
+      "not_calibrated": true,
+      "method": "2D point-cloud bounding footprint",
+      "validation_status": "NOT_CALIBRATED"
+    },
+    {
+      "name": "ceiling_height",
+      "value": null,
+      "unit": "m",
+      "confidence_interval": null,
+      "not_calibrated": true,
+      "method": "robust percentile plane estimate",
+      "validation_status": "GROUND_TRUTH_REQUIRED"
+    }
+  ],
+  "property_plan": {
+    "rooms": [
+      "room-001"
+    ],
+    "connectors": [],
+    "adjacency_graph": [],
+    "whole_property_footprint_m2": 0.26821237947864457,
+    "metric_status": "partial"
+  },
+  "damage": [],
+  "concealed_damage_flags": [],
+  "scope": [],
+  "confidence": {
+    "status": "not_calibrated",
+    "method": "Calibration requires physical ground truth; no intervals are claimed.",
+    "calibration_dataset": null
+  },
+  "validation": {
+    "status": "NOT_EVALUATED",
+    "gates": {},
+    "ground_truth_available": false
+  },
+  "provenance": {
+    "software_version": "0.3.0",
+    "commands": [
+      "python -m brynz.mvp --input test/fixtures/synthetic_lidar_fixture.zip --out demo_output/lidar"
+    ],
+    "source_files": [
+      "synthetic_lidar_fixture.zip"
+    ]
+  },
+  "limitations": [
+    "Wall candidates are experimental until ground-truth validation.",
+    "Monocular/photo/video metric scale is not inferred without calibration.",
+    "Damage detections require RGB input; no damage is asserted when no RGB evidence is available.",
+    "Physical gates remain NOT_EVALUATED without laser/tape ground truth."
+  ]
+}

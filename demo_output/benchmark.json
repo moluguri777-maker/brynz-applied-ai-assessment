@@ -1,0 +1,14 @@
+{
+  "status": "NOT_EVALUATED",
+  "reason": "Ground truth not supplied",
+  "gates": {
+    "opening_error_2cm_85pct": "NOT_EVALUATED",
+    "ceiling_error_1_5cm": "NOT_EVALUATED",
+    "ceiling_repeat_spread_1cm": "NOT_EVALUATED",
+    "wall_repeatability_1cm_or_0_5pct": "NOT_EVALUATED",
+    "drift_ablation": "NOT_EVALUATED",
+    "photo_footprint_8pct": "NOT_EVALUATED",
+    "video_footprint_3pct": "NOT_EVALUATED",
+    "confidence_calibration": "NOT_EVALUATED"
+  }
+}

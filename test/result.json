@@ -1,0 +1,21 @@
+{
+  "input": "single_scan_with_ceiling.zip",
+  "frames_in_odometry": 9745,
+  "frames_used": 244,
+  "point_count": 85571,
+  "floor_y_m": -1.5002372594510964,
+  "ceiling_y_m": 1.5244178337364795,
+  "ceiling_height_m": 3.024655093187576,
+  "uncertainty": {
+    "method": "empirical benchmark calibration required",
+    "wall_length_interval": "not claimed until ground truth is supplied",
+    "ceiling_interval": "not claimed until ground truth is supplied"
+  },
+  "plan": {
+    "x_min": -3.4280110093461387,
+    "x_max": 6.775321101261154,
+    "z_min": -2.017643994109644,
+    "z_max": 9.409367920871995,
+    "footprint_area_m2": 116.59359760042427
+  }
+}
