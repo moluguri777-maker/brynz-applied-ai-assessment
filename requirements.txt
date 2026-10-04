@@ -1,0 +1,7 @@
+numpy
+pandas
+Pillow
+scipy
+matplotlib
+opencv-python-headless
+jsonschema
