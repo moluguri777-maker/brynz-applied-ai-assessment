@@ -46,7 +46,7 @@ Provide the same two rooms from a consumer scanning app plus ground truth. Run `
 `python reproduce.py --input test/fixtures/synthetic_lidar_fixture.zip --output demo_output`
 
 ## Tests
-Run `python -m pytest -q`.
+`python -m pytest -q` → **6 passed** (final run). `python reproduce.py --input test/fixtures/synthetic_lidar_fixture.zip --output demo_output` → **successful**, about 24 seconds in this environment.
 
 ## Known limitations
 The source ZIP did not contain raw capture data, so the supplied generated `test/fixtures/synthetic_lidar_fixture.zip` is a software regression fixture only and must not be used as assessment evidence.
