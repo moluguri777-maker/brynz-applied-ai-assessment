@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+demo_output_test/
+demo_real_ceiling/
+demo_real_floor_only/
+demo_real_single_room/
